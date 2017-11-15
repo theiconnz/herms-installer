@@ -1,0 +1,27 @@
+{
+    "name": "theiconnz/herms-installer",
+    "description": "Forge backend installer",
+    "license": "BSD-3-Clause",
+    "type": "composer-plugin",
+    "homepage": "http://forge.co.nz/",
+	"version": "0.0.5",
+	"minimum-stability":"stable",
+    "require": {
+        "php": "^5.6 || ^7.0",
+        "zendframework/skeleton-application": "*",
+        "composer-plugin-api": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Forgeonline\\FgInstaller\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Forgeonline\\FgInstaller\\": "test/"
+        }
+    },
+    "extra": {
+        "class": "Forgeonline\\FgInstaller\\TemplateInstallerPlugin"
+    }
+}
