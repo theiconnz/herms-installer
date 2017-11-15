@@ -13,15 +13,15 @@
     },
     "autoload": {
         "psr-4": {
-            "Forgeonline\\FgInstaller\\": "src/"
+            "Theiconnz\\HermsInstaller\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Forgeonline\\FgInstaller\\": "test/"
+            "Theiconnz\\HermsInstaller\\": "test/"
         }
     },
     "extra": {
-        "class": "Forgeonline\\FgInstaller\\TemplateInstallerPlugin"
+        "class": "Theiconnz\\HermsInstaller\\TemplateInstallerPlugin"
     }
 }
