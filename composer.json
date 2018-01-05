@@ -1,9 +1,9 @@
 {
     "name": "theiconnz/herms-installer",
-    "description": "Forge backend installer",
+    "description": "TheIcon installer",
     "license": "BSD-3-Clause",
     "type": "composer-plugin",
-    "homepage": "http://forge.co.nz/",
+    "homepage": "http://theicon.co.nz/",
 	"version": "0.0.5",
 	"minimum-stability":"stable",
     "require": {
