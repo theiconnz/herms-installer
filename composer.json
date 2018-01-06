@@ -4,7 +4,7 @@
     "license": "BSD-3-Clause",
     "type": "composer-plugin",
     "homepage": "http://theicon.co.nz/",
-	"version": "0.0.6",
+	"version": "0.0.7",
 	"minimum-stability":"stable",
     "require": {
         "php": "^5.6 || ^7.0",
