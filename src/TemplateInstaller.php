@@ -9,8 +9,8 @@ class TemplateInstaller extends LibraryInstaller
      */
     public function getInstallPath(PackageInterface $package)
     {
-        $prefix = substr($package->getPrettyName(), 0, 9);
-        if ('theiconnz' !== $prefix) {
+        $prefix = substr($package->getPrettyName(), 0, 6;
+        if ('theicon' !== $prefix) {
             throw new \InvalidArgumentException(
                 'Unable to install template, Herms backend installer '
                 .'should always start their package name with '
