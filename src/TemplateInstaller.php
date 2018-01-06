@@ -9,7 +9,7 @@ class TemplateInstaller extends LibraryInstaller
      */
     public function getInstallPath(PackageInterface $package)
     {
-        $prefix = substr($package->getPrettyName(), 0, 6);
+        $prefix = substr($package->getPrettyName(), 0, 7);
         if ('theicon' !== $prefix) {
             throw new \InvalidArgumentException(
                 'Unable to install template, Herms backend installer '
