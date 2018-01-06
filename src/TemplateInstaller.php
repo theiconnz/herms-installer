@@ -17,7 +17,7 @@ class TemplateInstaller extends LibraryInstaller
                 .'"theiconnz"'
                 );
         }
-        $tmpModule = $this->getModuelInstallName( substr($package->getPrettyName(), 12) );
+        $tmpModule = $this->getModuelInstallName( $package->getPrettyName() );
         return 'module/'.$tmpModule ;
     }
     /**
