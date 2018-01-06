@@ -29,7 +29,7 @@ class TemplateInstaller extends LibraryInstaller
     }
     
     public function getModuelInstallName( $prefixname ){
-        $tmpa = ucwords( str_replace("-", " ", $tmp[0] ) );
+        $tmpa = ucwords( str_replace("-", " ", $prefixname ) );
         return str_replace(" ","", $tmpa);
     }
 }
