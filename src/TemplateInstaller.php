@@ -17,7 +17,7 @@ class TemplateInstaller extends LibraryInstaller
                 .'"theiconnz"'
                 );
         }
-        $tmpModule = $this->getModuelInstallName(substr($package->getPrettyName(),9));
+        $tmpModule = $this->getModuelInstallName(substr($package->getPrettyName(),10));
         return 'module/'.$tmpModule ;
     }
     /**
@@ -30,6 +30,6 @@ class TemplateInstaller extends LibraryInstaller
     
     public function getModuelInstallName( $prefixname ){
         $tmpa = ucwords( str_replace("-", " ", $prefixname ) );
-        return str_replace(" ","", ucfirst($tmpa));
+        return str_replace(" ","", $tmpa);
     }
 }
