@@ -29,8 +29,14 @@ class TemplateInstaller extends LibraryInstaller
     }
     
     public function getModuelInstallName( $prefixname ){
-        $tmp = ucwords( str_replace("-", " ", $prefixname ) );
-        $tmp = ucwords( str_replace("\", " ", $tmp ) );
-        return str_replace(" ","", $tmp );
+        $tmp = explode("\", $prefixname);
+        if (count($tmp)>1) {
+            $tmpa = ucwords( str_replace("-", " ", $tmp[1] ) );
+            $tmp[1] = str_replace(" ","", $tmpa);
+        } else {
+            $tmpa = ucwords( str_replace("-", " ", $tmp[0] ) );
+            $tmp[0] = str_replace(" ","", $tmpa);
+        }
+        return implode("\", $tmp);
     }
 }
